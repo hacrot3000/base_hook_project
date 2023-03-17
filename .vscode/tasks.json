@@ -1,0 +1,48 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    //
+    {
+      "label": "Start compiler docker",
+      "type": "shell",
+      "command": "docker run -d --name nim -it -v ~/:/home/duongtc hacrot3000/nim:ubuntu bash",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Stop and del compiler docker",
+      "type": "shell",
+      "command": "docker rm -f nim",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Compile debug",
+      "type": "shell",
+      "command": "docker exec -it nim /home/duongtc/568E/Haitac/server-patching/docker_script/compile_exc",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Build release",
+      "type": "shell",
+      "command": "docker exec -it nim /home/duongtc/568E/Haitac/server-patching/docker_script/compile_release_exc",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },          
+  ]
+}

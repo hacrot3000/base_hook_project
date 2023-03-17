@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "gdb",
+      "request": "launch",
+      "name": "Launch Program (SSH)",
+      "target": "./GM_52_3",
+      "cwd": "${workspaceRoot}",
+      "ssh": {
+        "forwardX11": false,
+        "host": "10.9.1.12",
+        "cwd": "/data/gameapp/vietnam/3/2018071215/bin",
+        //"keyfile": "/home/huy/.ssh/id_rsa",
+        "useAgent": true,
+        "user": "root",
+        "bootstrap": "export LD_PRELOAD=/data/gameapp/vietnam/3/2018071215/bin/libpatch.so"
+      },
+      "valuesFormatting": "parseText",
+      "printCalls": true
+    },
+    {
+    "type": "gdb",
+    "request": "attach",
+    "name": "Attach GM_52_3",
+    "executable": "/data/gameapp/vietnam/3/2018071215/bin/GM_52_3",
+    "target": "10.9.1.12:4444",
+    "remote": true,
+    "cwd": "${workspaceRoot}", // "/data/gameapp/vietnam/3/2018071215/bin",
+    "valuesFormatting": "parseText",
+    "postDebugTask": ""
+  }
+  ]
+}

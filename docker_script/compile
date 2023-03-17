@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /home/duongtc/568E/Haitac/server-patching
+/home/duongtc/.nimble/bin/nim c -f server/patch

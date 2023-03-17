@@ -1,0 +1,15 @@
+nimble build
+
+nimble install sim
+nimble install https://github.com/ba0f3/ba0f3
+nimble install https://github.com/ba0f3/ba0f3@#HEAD
+nimble install redpool
+nimble install https://github.com/ba0f3/nim-redisclient@0.2.1
+nimble install https://github.com/OpenSystemsLab/nimpleflake
+nimble install https://github.com/ba0f3/eventemitter
+
+nimble install funchook
+nimble install funchook@#ad6304c7b9d3bcb42fd074871823336baaf3053f
+
+nimble install with@0.2.0
+nimble install q

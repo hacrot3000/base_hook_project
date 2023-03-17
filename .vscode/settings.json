@@ -1,0 +1,23 @@
+{
+  "cmake.configureOnOpen": false,
+  "editor.tabSize": 2,
+  "Lua.diagnostics.globals": [
+    "pClient",
+    "GetUserId",
+    "GetUserInfo",
+    "ReadChar",
+    "ReadString",
+    "ReadInt64",
+    "ReadInt32",
+    "GAME_CLIENT",
+    "GetGameClient",
+    "GetReadStream",
+    "Item"
+  ],
+  "Lua.diagnostics.disable": [
+    "lowercase-global"
+  ],
+  "files.exclude": {
+    ".lh": true
+  }
+}

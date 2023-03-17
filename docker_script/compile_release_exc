@@ -1,0 +1,3 @@
+#!/bin/bash
+
+su -c /home/duongtc/568E/Haitac/server-patching/docker_script/compile_release duongtc

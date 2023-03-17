@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd /home/duongtc/568E/Haitac/server-patching
+#/home/duongtc/.nimble/bin/nimble release && \
+
+/home/duongtc/.nimble/bin/nim c -f -d:release --hints:off -o:server/libbattle_release.so server/patch.nim
+# /home/duongtc/.nimble/bin/nim c -f -d:release --hints:off -d:BATTLE_MODE -o:server/libbattle.so server/patch.nim && \
+# /home/duongtc/.nimble/bin/nim c -f -d:release --hints:off arenaserver/arenaserver.nim && \
+# echo ""  && \
+# echo "Copy files to docker builder folder" && \
+# cp -v arenaserver/arenaserver ../server-dockerize/apps/arenaserver/files/arenaserver && \
+# cp -v server/libpatch.so ../server-dockerize/apps/gameapp/files/lib/libpatch.so && \
+# cp -v server/libbattle.so ../server-dockerize/apps/battleserver/files/libbattle.so
