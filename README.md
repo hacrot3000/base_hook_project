@@ -19,7 +19,9 @@ glibc-devel-2.17-55.el6.x86_64.rpm \
 glibc-headers-2.17-55.el6.x86_64.rpm
 ```
 
+Install required package:
 
+```
 nimble build
 
 nimble install sim
@@ -35,3 +37,4 @@ nimble install funchook@#ad6304c7b9d3bcb42fd074871823336baaf3053f
 
 nimble install with@0.2.0
 nimble install q
+```
