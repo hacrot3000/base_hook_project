@@ -1,4 +1,4 @@
-This is a project use Nim land to create a SO library which help you to hook into any ELF application.
+This is a project use Nim lang to create a SO library which help you to hook into any ELF application.
 Usuage:
 - Use LD_PRELOAD trick to load the compiled SO library
 - Define the function in server/private/common.nim, parametters and address must same with the application which you want to hook
